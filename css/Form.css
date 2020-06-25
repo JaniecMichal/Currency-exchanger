@@ -1,0 +1,81 @@
+.form__field {
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #005252;
+    background-color: hsl(0, 0%, 95%);
+    box-shadow: 2px 2px 1px 1px #494949;
+}
+
+.form__legend {
+    background-color: #005252;
+    color: white;
+    padding: 10px;
+}
+
+.form__radio {
+    margin-left: 20px;
+}
+
+.form__radio {
+    margin-left: 20px;
+}
+
+.form__radio--first {
+    margin-left: 0px;
+}
+
+.form__numberType {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #005252;
+    text-align: right;
+}
+
+.form__numberType:focus {
+    outline: 2px solid hsl(180, 100%, 55%);
+    border-radius: 5px;
+}
+
+.form__numberType--disabled {
+    background-color: hsl(0, 0%, 85%);
+    font-weight: 800;
+}
+.form__numberType--readonly {
+
+    font-weight: 800;
+}
+
+.form__text {
+    max-width: 65px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #005252;
+    background-color: hsl(0, 0%, 85%);
+    color: black;
+    text-align: left;
+    font-weight: 800;
+}
+
+.form__text:focus {
+    outline: 2px solid hsl(180, 100%, 55%);
+    border-radius: 5px;
+}
+
+.form__Convert {
+    margin-top: 20px;
+    text-transform: uppercase;
+    background-color: #005252;
+    padding: 5px;
+    color: white;
+    border: 4px solid hsl(180, 100%, 35%);
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px 1px #494949;
+}
+
+.form__Convert:hover {
+    cursor: pointer;
+    border: 4px solid #005252;
+    background-color: hsl(180, 100%, 35%);
+    box-shadow: none;
+}

@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url("/images/embossed-diamond.png");
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}

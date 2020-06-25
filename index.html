@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter by Imperator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link href="css/Body.css" rel="stylesheet">
+    <link href="css/MainHeader.css" rel="stylesheet">
+    <link href="css/Container.css" rel="stylesheet">
+    <link href="css/Form.css" rel="stylesheet">
+    <script defer src="js/CurrencyExchanger.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+
+    <header class="mainHeader">
+        <h1 class="mainHeader__logo">CURRENCY EXCHANGER by Imperator</h1>
+    </header>
+
+    <div class="container">
+
+        <form class="form">
+            <fieldset class="form__field">
+                <legend class="form__legend">Dane wejściowe</legend>
+                <label>Waluta, z której przeliczamy:</label>
+                <p><input type="radio" name="From" value="EUR" class="form__radio form__radio--first js-FromCurrency0"
+                        required> EUR
+                    <img src="images/EU.png" alt="EU flag">
+                    <input type="radio" name="From" value="USD" class="form__radio js-FromCurrency1" required> USD <img
+                        src="images/US.png" alt="US flag">
+                    <input type="radio" name="From" value="GBP" class="form__radio js-FromCurrency2" required> GBP <img
+                        src="images/UK.png" alt="GB flag">
+                    <input type="radio" name="From" value="CHF" class="form__radio js-FromCurrency3" required> CHF <img
+                        src="images/CHF.png" alt="CHF flag">
+                    <input type="radio" name="From" value="PLN" class="form__radio js-FromCurrency4" required> PLN <img
+                        src="images/PL.png" alt="PL flag"></p>
+
+                <label>Kwota do przeliczenia: <input type="number" class="form__numberType js-FromValue" min="1"
+                        step="1" value="" required></label>
+                <input type="text" class="form__text  js-FromCurrencySymbol" readonly value="">
+
+                <p class="form__paragraph"><label>Waluta, na którą przeliczamy:</label></p>
+                <p><input type="radio" name="To" value="EUR" class="form__radio form__radio--first js-ToCurrency0">
+                    EUR
+                    <img src="images/EU.png" alt="EU flag">
+                    <input type="radio" name="To" value="USD" class="form__radio  js-ToCurrency1"> USD <img
+                        src="images/US.png" alt="US flag">
+                    <input type="radio" name="To" value="GBP" class="form__radio  js-ToCurrency2"> GBP <img
+                        src="images/UK.png" alt="GB flag">
+                    <input type="radio" name="To" value="CHF" class="form__radio  js-ToCurrency3"> CHF <img
+                        src="images/CHF.png" alt="CHF flag">
+                    <input type="radio" name="To" value="PLN" class="form__radio  js-ToCurrency4"> PLN <img
+                        src="images/PL.png" alt="PL flag">
+                </p>
+
+                <p class="form__paragraph"><label>Aktualny kurs: <input type="number"
+                            class="form__numberType form__numberType--disabled js-Rate" disabled value=""></label>
+                </p>
+
+                <button class="form__Convert" type="submit">Przelicz</button>
+
+                <p class="form__paragraph"><label>Wartość po przeliczeniu: <input type="number"
+                            class="form__numberType form__numberType--readonly  js-ToValue" readonly value=""></label>
+                    <input type="text" class="form__text  js-ToCurrencySymbol" readonly></p>
+            </fieldset>
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
