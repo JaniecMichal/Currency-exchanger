@@ -1,0 +1,14 @@
+.footer{
+    max-width: 100%;
+    color: #005252;
+    padding: 10px;
+    text-align:center;
+    border-top: 2px solid teal;
+}
+.footer__link{
+    color: #005252;
+    text-decoration: none;
+}
+.footer__link:hover{
+    color: teal;
+}
