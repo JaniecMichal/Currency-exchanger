@@ -1,14 +1,17 @@
-.footer{
+.footer {
+    background-color: #f2f2f2;
     max-width: 100%;
     color: #005252;
     padding: 10px;
-    text-align:center;
+    text-align: center;
     border-top: 2px solid teal;
 }
-.footer__link{
+
+.footer__link {
     color: #005252;
     text-decoration: none;
 }
-.footer__link:hover{
+
+.footer__link:hover {
     color: teal;
 }
